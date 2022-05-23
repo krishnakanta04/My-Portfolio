@@ -90,3 +90,8 @@ a {
     transform: rotateY(359deg);
   }
 }
+
+.current {
+  background-color: white;
+  color: #141414;
+}

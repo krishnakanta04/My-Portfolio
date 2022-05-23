@@ -1,0 +1,82 @@
+.cert-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: transitionIn 1s linear;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cert-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-main {
+  width: 70%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
+
+.certs {
+  position: relative;
+}
+
+.cert-img {
+  height: 100%;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  transition: filter 1s;
+}
+
+.cert-img:hover {
+  filter: blur(0px);
+}
+
+.cert1 {
+  background-image: url(../materials/project1.jpg);
+}
+
+.cert2 {
+  background-image: url(../materials/project2.jpg);
+}
+
+.cert3 {
+  background-image: url(../materials/project3.jpg);
+}
+
+.cert4 {
+  background-image: url(../materials/project4.jpg);
+}
+
+.cert-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cert-details * {
+  margin: 5px;
+}
