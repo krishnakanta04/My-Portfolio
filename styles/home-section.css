@@ -19,6 +19,19 @@
   }
 }
 
+.logo > img {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
 .main {
   display: flex;
   align-items: center;
@@ -50,4 +63,26 @@
   font-weight: bold;
   letter-spacing: 3px;
   margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo > img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  .hello > p {
+    font-size: 20px;
+  }
+
+  .name > p {
+    font-size: 40px;
+  }
+  .profession > p {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 15px;
+  }
 }

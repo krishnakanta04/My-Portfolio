@@ -97,3 +97,43 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-main > h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 290px;
+    height: 200px;
+    font-size: 12px;
+  }
+
+  .card-section-1 > img {
+    width: 100px;
+    border-radius: 100%;
+  }
+
+  .card-icons img {
+    width: 20px;
+    transition: transform 500ms;
+  }
+
+  .card-icons img:hover {
+    transform: scale(1.1);
+  }
+
+  .location {
+    display: flex;
+  }
+
+  .location > img {
+    width: 20px;
+    height: 20pxpx;
+  }
+
+  .location > p {
+    font-size: 12px;
+  }
+}

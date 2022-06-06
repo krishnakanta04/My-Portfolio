@@ -78,20 +78,21 @@ a {
   color: #141414;
 }
 
-.logo > img {
-  animation: rotation 10s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(359deg);
-  }
-}
-
 .current {
   background-color: white;
   color: #141414;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-link {
+    font-size: 10px;
+  }
+
+  body {
+    background-color: #141414;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
 }
